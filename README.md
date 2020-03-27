@@ -12,6 +12,8 @@
  [+]python manage.py runserver <br>
  [+]python manage.py startapp <name> <br>
 
+ 
+
 ##ENV
 [+] beta
 
