@@ -54,7 +54,7 @@ ROOT_URLCONF = 'djangoforfun.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],#อ้างอิงโฟร์เดอร์ตำแหน่ง Templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
