@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from blogs import views #ต้องการเข้าถึงไฟล์ views.py ที่อยู่ในโฟลเดอร์ Blogs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.hello,name='home'),
 ]
