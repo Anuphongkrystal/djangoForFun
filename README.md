@@ -2,7 +2,7 @@
  [+] pip install virtualenvwrapper-win <br>
  [+] pip install django<br>
  [+] pip install mysqlclient<br>
-      - แก้ปัญหา 
+      - แก้ปัญหา
 ##STEP
 [+] create folder mkdir  <name>
  [+] mkvirtualenv <name> ชื่อสำหรับใช้ตั้ง env นั้นๆ <br>
@@ -12,8 +12,9 @@
  [+]django-admin startproject <name> <br>
  [+]python manage.py runserver <br>
  [+]python manage.py startapp <name> <br>
-
-
+ [+] ต้องไปตั้งค่าให้ตัวโปรเจค มองหาแอปที่สร้างขึ้นมาก่อน<br>
+ [+] python manage.py makemigrations <br>
+ [+] python manage.py migrate สำหรับการสร้างฐานข้อมูลที่เราออกแบบไว้ใน Model<br>
 
 ##ENV
 [+] beta

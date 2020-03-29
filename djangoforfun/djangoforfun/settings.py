@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blogs', #ในกรณีที่เราจะสร้างฐานข้อมูล เราต้องทำให้มันรู้จักแอปก่อน
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,7 @@ DATABASES = {
         'NAME':'djangoforfun', #ชื่อฐานข้อมูล
         'USER':'root', #username DB
         'PASSWORD':'', #password DB
-        'HOST':'localhost',
+        'HOST':'localhost', #ip
         'PORT':'',
     }
 }
