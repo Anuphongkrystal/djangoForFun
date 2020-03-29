@@ -13,6 +13,11 @@
       <li>{{tag}}</li>
     {% endfor %}
   </ul>
-
+  <h2>ความนิยม</h2>
+    {% if rating > 3 %}
+      <h3>ดีมาก</h3>
+    {% else %}
+        <h3>ปานกลาง</h3>
+    {%endif%}
   </body>
 </html>
