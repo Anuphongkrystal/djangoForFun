@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-  <h2>Title : {{ name }}</h2>
-  <h3>Author : {{ author }}</h3>
-  <h2>Tags</h2>
-  <ul>
-    {% for tag in tags %}
-      <li>{{tag}}</li>
-    {% endfor %}
-  </ul>
-  <h2>ความนิยม</h2>
-    {% if rating > 3 %}
-      <h3>ดีมาก</h3>
-    {% else %}
-        <h3>ปานกลาง</h3>
-    {%endif%}
-  </body>
-</html>
+{% extends 'layout.html' %}  <!--Included file from layout.html!-->
+
+{% block content %} <!-- dynamic name="conten " !-->
+
+<h2>Title : {{ name }}</h2> 
+<h3>Author : {{ author }}</h3>
+<h2>Tags</h2>
+<ul>
+  {% for tag in tags %}
+    <li>{{tag}}</li>
+  {% endfor %}
+</ul>
+<h2>ความนิยม</h2>
+  {% if rating > 3 %}
+    <h3>ดีมาก</h3>
+  {% else %}
+      <h3>ปานกลาง</h3>
+  {%endif%}
+
+{% endblock %} <!-- end block name="content" !-->
