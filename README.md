@@ -15,6 +15,8 @@
  [+] ต้องไปตั้งค่าให้ตัวโปรเจค มองหาแอปที่สร้างขึ้นมาก่อน<br>
  [+] python manage.py makemigrations <br>
  [+] python manage.py migrate สำหรับการสร้างฐานข้อมูลที่เราออกแบบไว้ใน Model<br>
+ [+] python manage.py createsuperuser <br>
+
 
 ##ENV
 [+] beta
