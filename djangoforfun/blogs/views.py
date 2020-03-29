@@ -19,3 +19,8 @@ def page1(request):
 
 def createform(request):
     return render(request,'form.html')
+
+def addBlog(request):
+    name = request.POST['name']
+    desc = request.POST['desc']
+    return render(request,'result.html',{'name':name,'desc':desc})
