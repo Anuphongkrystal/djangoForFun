@@ -1,8 +1,30 @@
 {% extends 'layout.html' %}  <!--Included file from layout.html!-->
 
 {% block content %} <!-- dynamic name="conten " !-->
+<div class="container">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">รหัส</th>
+      <th scope="col">Title</th>
+      <th scope="col">Desction</th>
 
-<h2>Title : {{ name }}</h2> 
+    </tr>
+  </thead>
+  <tbody>
+
+  {% for post in posts%}
+    <tr>
+      <th scope="row">{{ post.id }}</th>
+      <td>{{ post.name }}</td>
+      <td>{{ post.desc }}</td>
+      </tr>
+  {% endfor %}
+  </tbody>
+</table>
+ </div>
+<!--
+<h2>Title : {{ name }}</h2>
 <h3>Author : {{ author }}</h3>
 <h2>Tags</h2>
 <ul>
@@ -16,5 +38,5 @@
   {% else %}
       <h3>ปานกลาง</h3>
   {%endif%}
-
+!-->
 {% endblock %} <!-- end block name="content" !-->
