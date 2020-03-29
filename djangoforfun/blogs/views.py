@@ -16,3 +16,6 @@ def hello(request): #เปรียบสเมือนเราสร้า�
 
 def page1(request):
     return render(request,'page1.html')
+
+def createform(request):
+    return render(request,'form.html')

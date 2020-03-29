@@ -20,5 +20,6 @@ from blogs import views #ต้องการเข้าถึงไฟล์ 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.hello), # call function hello(); in file views.py values="name"
-    path('page1',views.page1), #call function page1(); 
+    path('page1',views.page1), #call function page1();
+    path('createform',views.createform),
 ]
