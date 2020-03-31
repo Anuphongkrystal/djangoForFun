@@ -22,5 +22,5 @@ urlpatterns = [
     path('',views.hello), # call function hello(); in file views.py values="name"
     path('page1',views.page1), #call function page1();
     path('createform',views.createform),
-    path('addForm',views.addBlog),
+    path('addForm',views.addUser),
 ]
